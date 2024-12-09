@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusWalls 登录</title>
+    <style>
+        /* 设置标题样式 */
+        h1 {
+            font-family: 楷体; /* 字体为楷体 */
+            color: rgba(0, 0, 0, 0.8); /* 颜色为黑色，透明度为0.8 */
+            text-align: center; /* 文本居中对齐 */
+            font-size: 150px /* 字体大小为150px */
+        }
+        /* 设置副标题样式 */
+        h2 {
+            font-family: 楷体; /* 字体为楷体 */
+            color: rgba(0, 0, 0, 0.6); /* 颜色为黑色，透明度为0.6 */
+            text-align: center; /* 文本居中对齐 */
+            font-size: 110px /* 字体大小为110px */
+        }
+
+        /* 设置页脚版权信息样式 */
+        h3 {
+            text-decoration: underline; /* 下划线装饰 */
+            font-family: 楷体; /* 字体为楷体 */
+            color: #ffffff; /* 颜色为白色 */
+            text-align: center; /* 文本居中对齐 */
+            font-size: 30px /* 字体大小为30px */
+        }
+        div{
+            /* 预留的div样式 */
+        }
+        /* 设置页面背景样式 */
+        body {
+            background-image: url('img/1.jpg'); /* 设置背景图片 */
+            background-size: 100% 100%; /* 设置背景图片覆盖整个页面 */
+            background-repeat: no-repeat; /* 背景图片不重复 */
+            background-attachment: fixed; /* 背景图片固定位置 */
+            background-repeat: no-repeat; /* 防止背景图片重复 */
+        }
+
+        /* 设置按钮样式 */
+        button {
+            width: 80px; /* 宽度为80px */
+            height: 35px; /* 高度为35px */
+            font-size: 15px; /* 字体大小为15px */
+            background-color: rgba(255, 255, 255, 0.5); /* 背景颜色为半透明白色 */
+        }
+
+        /* 设置输入框样式 */
+        .input-fixed-size {
+            width: 250px; /* 宽度为250px */
+            height: 40px; /* 高度为40px */
+            padding: 5px; /* 内边距为5px */
+            background-color: rgba(185, 185, 185, 0.8); /* 背景颜色为半透明灰色 */
+            border: 2px solid #000000; /* 边框为2px黑色实线 */
+            border-radius: 15px; /* 边框圆角半径为15px */
+            font-size: 16px; /* 字体大小为16px */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>CampusWalls</h1>
+        <h2>登录</h2>
+        <center>
+            <form id="registration-form">
+                <div class="input-group">
+                    <label for="username">
+                    </label>
+                    <input type="text" class="input-fixed-size" id="username" name="username" placeholder="请输入用户名" required>
+                </div>
+                <br>
+                <div class="input-group">
+                    <label for="password">
+                    </label>
+                    <input type="password" class="input-fixed-size" id="password" name="password" placeholder="请输入密码" required>
+                </div>
+                <br>
+                <button type="button" id="submit-button">登录</button>
+                <button type="button" "registerUser()">注册</button>
+            </form>
+        </center>
+        <h3><em>&copy版权归我所有</em></h3>
+    </div>
+</body>
+</html>
